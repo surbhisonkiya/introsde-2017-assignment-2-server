@@ -2,8 +2,7 @@
 
 Surbhi Sonkiya
 
-Email-id: 
-surbhi.sonkiya@studenti.unitn.it
+Email-id: surbhi.sonkiya@studenti.unitn.it
 
 Worked Alone.
 
@@ -17,13 +16,13 @@ Client github repository: https://github.com/surbhisonkiya/introsde-2017-assignm
 
 # Project Description: 
 
-This project provides a system to the University to understand better the preferences of their students, that can help them register Users and their preferred activities. Students are the users. Firstname, lastname, birthdate of the students needs to be defined and stored. About the activities they need to register name, description, type of activity, place, start date/time. The University needs to add, read, modify and delete the information via Web (REST Services). Additionally the results should be save in a database.
+This project provides a system to the University to understand the preferences of their students, that can help them register students and their preferred activities. Firstname, lastname, birthdate of the students needs to be defined and stored. About the activities they need to register name, description, type of activity, place, start date/time. The University needs to add, read, modify and delete the information via Web (REST Services). Additionally, the results needs to be saved in a database.
 
 About the code:
 
-I have used SQLite database. Person and Activity tables are implemented through Java Persistence API. In src folder, Person.java and Activity.java implements these tables respectively. Activity types is implemented in an enum class. Hence, it is not stored as a table in the database. If the code is run locally, using App.java class, it implements the server on localhost port:5903.
+I have used SQLite database (name of the database "activitystudentDB"). Person and Activity tables are implemented through Java Persistence API. In src folder, Person.java and Activity.java implements these tables respectively. Activity types is implemented in an enum class. Hence, it is not stored as a table in the database. If the code is run locally, using App.java class, it implements the server on localhost port:5903.
 
-Please note: for below mentioned Request#10 -> I have updated the value for the place of the activity identified by {actvity_id}, related to the person identified by {id}.
+Please Note: for below mentioned Request#10, I have updated the value for the place of the activity identified by {actvity_id}, related to the person identified by {id}.
 
 Below are the list of tasks that are implemented:
 
@@ -52,7 +51,6 @@ Request#10 (Extra #1): PUT /person/{id}/{activity_type}/{activity_id} should upd
 Request#11 (Extra #2): GET /person/{id}/{activity_type}?before={beforeDate}&after={afterDate} should return the activities of {activity_type} (e.g., Social) for person {id} which {start_date} is in the specified range of date.
 
 
-
 *********************************************************************************************************************************
 
 # Execution: 
@@ -66,8 +64,8 @@ Request#11 (Extra #2): GET /person/{id}/{activity_type}?before={beforeDate}&afte
 
          ant create.war
          
-5) Create an app in the heroku. I have created an app named "activityperson".
-6) Login to your heroku account from the terminal.
+5) Login to your heroku account from the terminal.
+6) Create an app in the heroku. I have created an app named "activityperson".
 7) Deploy the newly created war on heroku. Use below command to do so -
 
         heroku war:deploy sde-assignment-02-server.war --app activityperson --include activitystudentDB.sqlite
@@ -78,8 +76,13 @@ Request#11 (Extra #2): GET /person/{id}/{activity_type}?before={beforeDate}&afte
 
 
 9) Server is ready and other server operations could be performed.
+
 *********************************************************************************************************************************
 
 # Additional Notes: 
 
 Please do step 8 mentioned under Execution part. If not done, database will not be initialised and server and it's operations will throw an error.
+
+It has been observed that for the above mentioned Request#8 and Request#10, it is sufficient to provide just the {activity_id}. When {activity_id} is provided, it is not required to provide {activity_type} as an activity associated with a person has a unique id and it is sufficient to do the operation.
+
+
