@@ -52,31 +52,30 @@ Request#11 (Extra #2): GET /person/{id}/{activity_type}?before={beforeDate}&afte
 
 # Execution: 
 
-1) Clone the server github repository to your local machine -
+1) Create an account on Heroku (URL: https://www.heroku.com/) and create an app in the Heroku (can create after logging into your Heroku account from the browser). I have created an app named "activityperson".
+
+2) Clone the server github repository to your local machine -
 
         Server github repository: https://github.com/surbhisonkiya/introsde-2017-assignment-2-server.git
 
-2) In the terminal, navigate to the path where you have cloned the repository on your local machine. 
+3) In the terminal, navigate to the path where you have cloned the repository on your local machine. 
 
-3) Build the war file from build.xml. Execute below command in the terminal. It creates war with name "sde-assignment-02-server.war".
+4) Build the war file from build.xml. Execute below command in the terminal. It creates war with name "sde-assignment-02-server.war".
 
          ant create.war
          
+5) Login to your heroku account from the terminal.
 
-5) Create an app in the Heroku (can create after logging into your Heroku account from the browser. Heroku URL: https://www.heroku.com/). I have created an app named "activityperson".
-
-6) Now, login to your heroku account from the terminal.
-
-7) Deploy the newly created war on heroku. Use below command to do so -
+6) Deploy the newly created war on heroku. Use below command to do so -
 
         heroku war:deploy sde-assignment-02-server.war --app activityperson --include activitystudentDB.sqlite
 
-8) In the browser, execute the below mentioned database_init to initialize the database on the server -
+7) In the browser, execute the below mentioned database_init to initialize the database on the server -
      
          https://activityperson.herokuapp.com/database_init
 
 
-9) Server is ready and other server operations could be performed.
+8) Server is ready and database is intialized. Server operations (HTTP requests) could be performed to verify the output.
 
 *********************************************************************************************************************************
 
