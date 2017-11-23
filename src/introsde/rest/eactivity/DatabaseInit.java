@@ -23,7 +23,7 @@ public class DatabaseInit {
 		Activity activity3 = new Activity("Dance", "Salsa dance classes", "Madrid", ActivityType.CULTURE, new Date());
 		activities.add(activity3);
 		
-		Activity activity4 = new Activity("Kho Kho", "Running outdoor games", "Jaipur", ActivityType.SPORT, new Date());
+		Activity activity4 = new Activity("Workshop", "Design Thinking Workshop", "Jaipur", ActivityType.WORK, new Date());
 		activities.add(activity4);
 		
 		Activity activity5 = new Activity("Culture class", "Learn italian culture in CLA", "Trento", ActivityType.CULTURE, new Date());
@@ -41,7 +41,7 @@ public class DatabaseInit {
 		Activity activity9 = new Activity("Party", "Friends get-togther", "Sanbapolis", ActivityType.SOCIAL, new Date());
 		activities.add(activity9);
 		
-		Activity activity10 = new Activity("Football", "Play football in women's team", "Mysore", ActivityType.SPORT, new Date());
+		Activity activity10 = new Activity("Team Meeting", "Discuss about the project", "Mysore", ActivityType.WORK, new Date());
 		activities.add(activity10);
 		
 		return activities;
