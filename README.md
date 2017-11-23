@@ -22,8 +22,6 @@ About the code:
 
 I have used SQLite database (name of the database "activitystudentDB"). Person and Activity tables are implemented through Java Persistence API. In src folder, Person.java and Activity.java implements these tables respectively. Activity types is implemented in an enum class. Hence, it is not stored as a table in the database. If the code is run locally, using App.java class, it implements the server on localhost port:5903.
 
-Please Note: for below mentioned Request#10, I have updated the value for the place of the activity identified by {actvity_id}, related to the person identified by {id}.
-
 Below are the list of tasks that are implemented:
 
 Request#0: DATABASE INIT an initialization process at deployment should create 5 new persons to initialise the database and return the newly created persons including at least one activity preference per person.
