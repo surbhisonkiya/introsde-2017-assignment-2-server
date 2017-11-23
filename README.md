@@ -16,6 +16,9 @@ Client github repository: https://github.com/surbhisonkiya/introsde-2017-assignm
 
 Project: 
 
+The University wants to understand better the preferences of their students, so they need a system that help them register Users and their preferred activities. Ideally they need to register firstname, lastname, birthdate of the students. About the activities they need to register name, description, type of activity, place, start date/time. The University needs to add, read, modify and delete the information via Web (REST Services). Additionally the results should be save in a database.
+
+
 description of the project (2 paragraphs). 1 paragraph about the code, 1 paragraph about the tasks the code does.
 
 *********************************************************************************************************************************
