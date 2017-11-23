@@ -1,31 +1,34 @@
 # introsde-2017-assignment-2-server
 
-Surbhi Sonkiya
+# Surbhi Sonkiya
 
-Email-id: surbhi.sonkiya@studenti.unitn.it
+# Email-id: 
+surbhi.sonkiya@studenti.unitn.it
 
 Worked Alone.
 
-Server URL: https://activityperson.herokuapp.com/
+# Server URL:
+https://activityperson.herokuapp.com/
 
-Server github repository: https://github.com/surbhisonkiya/introsde-2017-assignment-2-server.git
+# Server github repository: 
+https://github.com/surbhisonkiya/introsde-2017-assignment-2-server.git
 
-Client github repository: https://github.com/surbhisonkiya/introsde-2017-assignment-2-client.git
+# Client github repository: 
+https://github.com/surbhisonkiya/introsde-2017-assignment-2-client.git
 
 *********************************************************************************************************************************
 
-Project Description: 
+# Project Description: 
 
 This project provides a system to the University to understand better the preferences of their students, that can help them register Users and their preferred activities. Students are the users. Firstname, lastname, birthdate of the students needs to be defined and stored. About the activities they need to register name, description, type of activity, place, start date/time. The University needs to add, read, modify and delete the information via Web (REST Services). Additionally the results should be save in a database.
 
-About the code:
+# About the code:
 
 I have used SQLite database. Person and Activity tables are implemented through Java Persistence API. In src folder, Person.java and Activity.java implements these tables respectively. Activity types is implemented in an enum class. Hence, it is not stored as a table in the database. If the code is run locally, using App.java class, it implements the server on localhost port:5903.
 
 Please note: for below mentioned Request#10 -> I have updated the value for the place of the activity identified by {actvity_id}, related to the person identified by {id}.
 
-Below are the list of tasks that are implemented:
-
+# Below are the list of tasks that are implemented:
 
 Request#0: DATABASE INIT an initialization process at deployment should create 5 new persons to initialise the database and return the newly created persons including at least one activity preference per person.
 
@@ -55,7 +58,7 @@ Request#11 (Extra #2): GET /person/{id}/{activity_type}?before={beforeDate}&afte
 
 *********************************************************************************************************************************
 
-Execution: 
+# Execution: 
 
 1) Clone the server github repository to your local machine -
 
@@ -80,6 +83,6 @@ Execution:
 9) Server is ready and other server operations could be performed.
 *********************************************************************************************************************************
 
-Additional Notes: 
+# Additional Notes: 
 
 Please do step 8 mentioned under Execution part. If not done, database will not be initialised and server and it's operations will throw an error.
