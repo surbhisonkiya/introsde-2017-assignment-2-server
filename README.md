@@ -80,6 +80,4 @@ Request#11 (Extra #2): GET /person/{id}/{activity_type}?before={beforeDate}&afte
 
 Please do step 8 mentioned under Execution part. If not done, database will not be initialised and server and it's operations will throw an error.
 
-It has been observed that for the above mentioned Request#8 and Request#10, it is sufficient to provide just the {activity_id}. When {activity_id} is provided, it is not required to provide {activity_type} as an activity associated with a person has a unique id and it is sufficient to do the operation.
-
 
