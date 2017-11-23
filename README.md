@@ -57,12 +57,16 @@ Request#11 (Extra #2): GET /person/{id}/{activity_type}?before={beforeDate}&afte
         Server github repository: https://github.com/surbhisonkiya/introsde-2017-assignment-2-server.git
 
 2) In the terminal, navigate to the path where you have cloned the repository on your local machine. 
+
 3) Build the war file from build.xml. Execute below command in the terminal. It creates war with name "sde-assignment-02-server.war".
 
          ant create.war
          
-5) Login to your heroku account from the terminal.
-6) Create an app in the heroku. I have created an app named "activityperson".
+
+5) Create an app in the Heroku (can create after logging into your Heroku account from the browser. Heroku URL: https://www.heroku.com/). I have created an app named "activityperson".
+
+6) Now, login to your heroku account from the terminal.
+
 7) Deploy the newly created war on heroku. Use below command to do so -
 
         heroku war:deploy sde-assignment-02-server.war --app activityperson --include activitystudentDB.sqlite
