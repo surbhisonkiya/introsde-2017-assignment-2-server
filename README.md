@@ -44,9 +44,9 @@ Request#8: GET /person/{id}/{activity_type}/{activity_id} should return the acti
 
 Request#9: POST /person/{id}/{activity_type} should save a new value for the {activity_type} (e.g. Social) of person identified by {id} and archive the old value in the history.
         
-Request#10 (Extra #1): PUT /person/{id}/{activity_type}/{activity_id} should update the value for the {activity_type} (e.g., Social) identified by {activity_id}, related to the person identified by {id}.
+Request#10: PUT /person/{id}/{activity_type}/{activity_id} should update the value for the {activity_type} (e.g., Social) identified by {activity_id}, related to the person identified by {id}.
 
-Request#11 (Extra #2): GET /person/{id}/{activity_type}?before={beforeDate}&after={afterDate} should return the activities of {activity_type} (e.g., Social) for person {id} which {start_date} is in the specified range of date. (Date format should be: "yyyy-MM-dd'T'HH:mm:ss").
+Request#11: GET /person/{id}/{activity_type}?before={beforeDate}&after={afterDate} should return the activities of {activity_type} (e.g., Social) for person {id} which {start_date} is in the specified range of date. (Date format should be: "yyyy-MM-dd'T'HH:mm:ss").
 
 *********************************************************************************************************************************
 
